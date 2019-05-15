@@ -145,7 +145,7 @@ class QuestionListController extends Controller
         $form->text('answer_B', 'Answer B');
         $form->text('answer_C', 'Answer C');
         $form->text('answer_D', 'Answer D');
-        $form->text('answer_true', 'Answer true');
+        $form->radio('answer_true', 'Answer true')->options(QuestList::ANSWER);
 
         return $form;
     }

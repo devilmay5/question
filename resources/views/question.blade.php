@@ -1,3 +1,4 @@
-@foreach ($title_list as $user)
-    <p>This is user {{ $user->id }}</p>
+@foreach ($title_list as $item)
+    <a href="question_info/{{$item->id}}">{{$item->name}}</a>
+    <br>
 @endforeach

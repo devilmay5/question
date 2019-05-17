@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::resource('question_list',QuestionController::class);
+Route::get('question_info/{id}',"QuestionController@getList");
